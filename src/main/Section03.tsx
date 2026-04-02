@@ -3,7 +3,7 @@ const Section03 = () => {
     return(
         <div id="Section03">
             <div className="bg" data-aos="fade-in" data-aos-duration="1200">
-                <video muted autoPlay loop>
+                <video muted autoPlay loop playsInline>
                     <source src={`/img/main/section03_bg.mp4`} type="video/mp4" />
                 </video>
             </div>
