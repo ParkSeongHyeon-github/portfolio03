@@ -1,0 +1,32 @@
+.list-table{border-collapse:collapse;border-top:1px solid #111}
+.list-table thead th{height:60px;font-size:15px}
+.list-table thead th.number{width:100px}
+.list-table thead th.name{width:200px}
+.list-table tbody{border-top:1px solid #e1e1e1}
+.list-table tbody > tr{border-top:1px solid #e1e1e1}
+.list-table tbody > tr > td{padding:20px 0}
+.list-table tbody > tr > .link-td{font-weight:600}
+.list-table tbody > tr > .link-td a{display:flex;flex-direction:column;gap:7px;}
+.list-table tbody > tr > .link-td span{color:#666;font-weight:500;}
+.list-table tbody > tr > .link-td span.com{color:#e60000;}
+.list-table tbody > tr > .link-td span.wait{color:#1f77b3;}
+.list-table tbody td{padding:10px 0;text-align:center;font-size:14px}
+
+
+/* 반응형 [s] */
+@media (max-width:1024px){
+.list-table thead th{font-size:14px}
+.list-table tbody td{font-size:13px}
+}
+@media (max-width:768px){
+.list-table thead th{height:55px;font-size:13px}
+.list-table tbody td{font-size:12px}
+.list-table thead th.number{width:70px}
+.list-table thead th.name{width:100px}
+.list-table tbody > tr > td{padding:25px 0}
+}
+@media (max-width:480px){
+.list-table tbody > tr > td{padding:20px 0}
+.list-table tbody > tr > .link-td a{gap:5px}
+}
+/* 반응형 [e] */

@@ -1,0 +1,253 @@
+{
+  "room": [
+    {
+      "id": "04ec",
+      "room_subject": "스튜디오 랜덤",
+      "bed": "퀸 침대 1개",
+      "person_base": "2",
+      "person_max": "2",
+      "weekday": "75000",
+      "friday": "130000",
+      "weekend": "168000",
+      "room_content": "퀸침대 1개\n기준 2인 / 최대 2인 / 인원추가불가\n에어컨, 스마트TV, 냉장고, 커피포트, 생수\n개별 테라스\n샤워시설, 드라이기\nBath Amenity (칫솔, 치약 제외)\n주방, 조리기구, 전자레인지, 가스레인지\n금연 객실",
+      "room_img": [
+        "스튜디오 랜덤06.jpg",
+        "스튜디오 랜덤05.jpg",
+        "스튜디오 랜덤04.jpg",
+        "스튜디오 랜덤03.jpg",
+        "스튜디오 랜덤02.jpg",
+        "스튜디오 랜덤01.jpg"
+      ],
+      "service": [
+        {
+          "serviceKey": "베드구성",
+          "serviceVal": "퀸 침대 1개"
+        },
+        {
+          "serviceKey": "세면도구",
+          "serviceVal": "어메니티"
+        },
+        {
+          "serviceKey": "야외 서비스",
+          "serviceVal": "테라스"
+        },
+        {
+          "serviceKey": "인터넷",
+          "serviceVal": "무료 와이파이"
+        },
+        {
+          "serviceKey": "TV",
+          "serviceVal": "평면 TV"
+        },
+        {
+          "serviceKey": "객실 구비 시설",
+          "serviceVal": "에어컨"
+        }
+      ]
+    },
+    {
+      "id": "c126",
+      "room_subject": "패밀리투룸",
+      "bed": "퀸 침대 1개, 침구 1개",
+      "person_base": "3",
+      "person_max": "4",
+      "weekday": "210000",
+      "friday": "250000",
+      "weekend": "260000",
+      "room_content": "48m², 퀸침대 1개+싱글침구세트 1개\n기준 3인 / 최대 4인 (기준 인원 초과 시 인원 추가 비용 현장결제)\n에어컨, 스마트TV, 냉장고, 커피포트, 생수\n개별 테라스\n샤워시설, 드라이기\nBath Amenity (칫솔, 치약 제외)\n주방, 조리기구, 전자레인지, 가스레인지\n금연 객실\n베드 구도 디자인 및 가구, 소품, 발코니는 객실 마다 상이할 수 있습니다.",
+      "room_img": [
+        "패밀리투룸06.jpg",
+        "패밀리투룸05.jpg",
+        "패밀리투룸04.jpg",
+        "패밀리투룸03.jpg",
+        "패밀리투룸02.jpg",
+        "패밀리투룸01.jpg"
+      ],
+      "service": [
+        {
+          "serviceKey": "베드구성",
+          "serviceVal": "퀸 침대 1개, 침구 1개"
+        },
+        {
+          "serviceKey": "세면도구",
+          "serviceVal": "어메니티"
+        },
+        {
+          "serviceKey": "야외 서비스",
+          "serviceVal": "테라스"
+        },
+        {
+          "serviceKey": "인터넷",
+          "serviceVal": "무료 와이파이"
+        },
+        {
+          "serviceKey": "TV",
+          "serviceVal": "평면 TV"
+        },
+        {
+          "serviceKey": "객실 구비 시설",
+          "serviceVal": "에어컨"
+        }
+      ]
+    },
+    {
+      "id": "6fe3",
+      "room_subject": "스튜디오 W",
+      "bed": "더블 침대 1개",
+      "person_base": "2",
+      "person_max": "2",
+      "weekday": "163000",
+      "friday": "180000",
+      "weekend": "210000",
+      "room_content": "더블 침대 1개\n기준 2인 / 최대 2인 / 인원추가불가\n에어컨, 스마트TV, 냉장고, 커피포트, 생수\n개별 테라스\n샤워시설, 드라이기\nBath Amenity (칫솔, 치약 제외)\n주방, 조리기구, 전자레인지, 가스레인지\n금연 객실",
+      "room_img": [
+        "스튜디오 W09.jpg",
+        "스튜디오 W08.jpg",
+        "스튜디오 W07.jpg",
+        "스튜디오 W06.jpg",
+        "스튜디오 W05.jpg",
+        "스튜디오 W04.jpg",
+        "스튜디오 W03.jpg",
+        "스튜디오 W02.jpg",
+        "스튜디오 W01.jpg"
+      ],
+      "service": [
+        {
+          "serviceKey": "베드구성",
+          "serviceVal": "더블 침대 2개"
+        },
+        {
+          "serviceKey": "세면도구",
+          "serviceVal": "어메니티"
+        },
+        {
+          "serviceKey": "인터넷",
+          "serviceVal": "무료 와이파이"
+        },
+        {
+          "serviceKey": "야외 서비스",
+          "serviceVal": "테라스"
+        },
+        {
+          "serviceKey": "TV",
+          "serviceVal": "평면 TV"
+        },
+        {
+          "serviceKey": "객실 구비 시설",
+          "serviceVal": "에어컨"
+        }
+      ]
+    },
+    {
+      "id": "5b22",
+      "room_subject": "프리미어 스위트",
+      "bed": "퀸 침대 1개",
+      "person_base": "2",
+      "person_max": "3",
+      "weekday": "172800",
+      "friday": "198000",
+      "weekend": "216000",
+      "room_content": "10평, 퀸침대 1개\n기준 2인 / 최대 3인 (기준 인원 초과 시 인원 추가 비용 현장결제)\n에어컨, 스마트TV, 냉장고, 커피포트, 생수\n개별 테라스\n샤워시설, 드라이기\nBath Amenity (칫솔, 치약 제외)\n주방, 조리기구, 전자레인지, 가스레인지\n금연 객실\n베드 구도 디자인 및 가구, 소품, 발코니는 객실 마다 상이할 수 있습니다.",
+      "room_img": [
+        "프리미어 스위트09.jpg",
+        "프리미어 스위트08.jpg",
+        "프리미어 스위트07.jpg",
+        "프리미어 스위트06.jpg",
+        "프리미어 스위트05.jpg",
+        "프리미어 스위트04.jpg",
+        "프리미어 스위트03.jpg",
+        "프리미어 스위트02.jpg",
+        "프리미어 스위트01.jpg"
+      ],
+      "service": [
+        {
+          "serviceKey": "베드구성",
+          "serviceVal": "퀸 침대 1개"
+        },
+        {
+          "serviceKey": "세면도구",
+          "serviceVal": "어메니티"
+        },
+        {
+          "serviceKey": "야외 서비스",
+          "serviceVal": "테라스"
+        },
+        {
+          "serviceKey": "인터넷",
+          "serviceVal": "무료 와이파이"
+        },
+        {
+          "serviceKey": "TV",
+          "serviceVal": "평면 TV"
+        },
+        {
+          "serviceKey": "객실 구비 시설",
+          "serviceVal": "에어컨"
+        }
+      ]
+    }
+  ],
+  "member": [
+    {
+      "id": "9a4a",
+      "mb_id": "admin",
+      "mb_password": "a1234",
+      "mb_email": "admin@admin.com",
+      "mb_name": "관리자",
+      "mb_phone": "01011112222"
+    }
+  ],
+  "reservation": [
+    {
+      "id": "1wsAZ2qazL",
+      "price": 225000,
+      "endDate": "2026-04-04",
+      "useDate": "2026-04-01",
+      "roomSubject": "스튜디오 랜덤",
+      "stayPeriod": "3박 4일",
+      "adultCount": "1명",
+      "childCount": "0명",
+      "userName": "홍길동",
+      "userPhone": "01011112222",
+      "request": "테스트",
+      "orderId": "bDUaD1k7dg"
+    },
+    {
+      "price": 440000,
+      "endDate": "2026-04-10",
+      "useDate": "2026-04-08",
+      "roomSubject": "패밀리투룸",
+      "stayPeriod": "2박 3일",
+      "adultCount": "4명",
+      "childCount": "0명",
+      "userName": "홍길동",
+      "userPhone": "01012345678",
+      "request": "테스트",
+      "id": "tXkcLyRx-P",
+      "orderId": "PNmGwzuLfa"
+    },
+    {
+      "price": 210000,
+      "endDate": "2026-04-03",
+      "useDate": "2026-04-02",
+      "roomSubject": "패밀리투룸",
+      "stayPeriod": "1박 2일",
+      "adultCount": "1명",
+      "childCount": "0명",
+      "userName": "테스트",
+      "userPhone": "01011112222",
+      "request": "테스트",
+      "id": "olcT3kNJ8o",
+      "orderId": "LwgXc5_aCO"
+    }
+  ],
+  "community": [
+    {
+      "subject": "수정 테스트",
+      "content": "수정 테스트",
+      "userName": "관리자",
+      "id": "K-vKVrB"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

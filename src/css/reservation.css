@@ -1,0 +1,130 @@
+#Reservation, #ReservationWrite{margin:80px auto;max-width:1300px}
+.search{display:flex;align-items:center;gap:8px;margin:0 0 30px auto;width:max-content}
+.search-wrap{position:relative}
+.search-wrap input{padding:12px;width:270px;height:45px;border:1px solid #e1e1e1;font-size:15px}
+.search-wrap button{position:absolute;top:50%;right:10px;transform:translateY(-50%);border:none;background-color:transparent}
+.refresh-btn{display:flex;justify-content:center;align-items:center;width:45px;height:45px;border:1px solid #e1e1e1;background-color:transparent}
+.admin-btn{margin-top:20px}
+.admin-btn li a{display:flex;justify-content:center;align-items:center;width:115px;height:55px;font-size:14px;color:#fff;background-color:var(--primary)}
+
+#ReservationWrite .top{position:relative;display:flex;gap:30px;padding-top:70px}
+#ReservationWrite .top .left, #ReservationWrite .top .right{width:50%}
+#ReservationWrite .top .right{padding:50px 30px 0px;border:1px solid #e1e1e1}
+#ReservationWrite .top .right .tit{padding-bottom:30px;margin-bottom:30px;border-bottom:1px solid #e1e1e1;font-size:22px;font-weight:500;text-align:center;color:#ff567f}
+#ReservationWrite .top .right .tit span{margin-right:10px;font-weight:700;color:#000}
+#ReservationWrite .top .right ul{margin:45px 30px 0px}
+#ReservationWrite .top .right ul li{display:flex;font-size:15px}
+#ReservationWrite .top .right ul li+li{margin-top:18px}
+#ReservationWrite .top .right ul li span{margin-right:15px;font-weight:700}
+#ReservationWrite .top .right ul li span.type{margin-right:0px}
+#ReservationWrite .middle{margin-top:70px}
+#ReservationWrite .middle p{display:block;margin-bottom:17px;padding:0 24px;font-size:15px;font-weight:normal;letter-spacing:-.15px;line-height:43px;color:#fff;background:#373737}
+#ReservationWrite .info-wrap{display:flex;gap:30px;padding:30px;border:1px solid #e1e1e1}
+#ReservationWrite .info-wrap .right, #ReservationWrite .info-wrap .left{width:50%}
+#ReservationWrite .info-wrap .right{display:flex;flex-direction:column;padding:30px}
+#ReservationWrite .info-wrap .left img{width:100%;height:300px;object-fit:cover}
+#ReservationWrite .info-wrap .tit{display:flex;align-items:end;gap:10px;margin-bottom:30px;padding-bottom:30px;border-bottom:1px solid #e1e1e1;font-size:20px;font-weight:600}
+#ReservationWrite .info-wrap span{font-size:16px;font-weight:500;color:#666}
+#ReservationWrite .info-wrap .select-wrap{display:flex;gap:30px}
+#ReservationWrite .info-wrap .select-wrap label{padding-bottom:3px;width:max-content;font-size:16px;font-weight:600;border-bottom:1px solid #e1e1e1}
+#ReservationWrite .info-wrap .select-wrap select{padding-bottom:10px;border:none;border-bottom:2px solid #111;font-size:16px}
+#ReservationWrite .info-wrap .select-wrap > div{display:flex;flex-direction:column;gap:12px;width:calc(100% / 3)}
+#ReservationWrite .info-wrap .price{display:flex;justify-content:end;align-items:center;gap:15px;margin-top:auto;font-size:24px;font-weight:600}
+#ReservationWrite .info-wrap .price div{font-size:16px;font-weight:500;color:#666}
+#ReservationWrite .bottom{display:flex;gap:30px;margin-top:80px}
+#ReservationWrite .bottom .left, #ReservationWrite .bottom .right{width:50%}
+#ReservationWrite .bottom p{overflow:hidden;display:block;margin-bottom:17px;padding:0 24px;font-size:15px;letter-spacing:-.15px;line-height:43px;background:#373737;border-top:2px solid #333;color:#222;background-color:#f5f5f5}
+#ReservationWrite .bottom .container{padding:30px 20px;border:1px solid #e1e1e1;height:260px}
+#ReservationWrite .bottom .input-wrap{display:flex;gap:10px}
+#ReservationWrite .bottom .input-wrap > div{width:50%}
+#ReservationWrite .bottom .input-wrap > div input{padding:12px;width:100%;height:48px;border:1px solid #e1e1e1;font-size:14px}
+#ReservationWrite .bottom textarea{margin-top:10px;padding:12px;width:100%;height:120px;border:1px solid #e1e1e1;font-size:14px}
+#ReservationWrite .bottom .totalprice{display:flex;justify-content:space-between;align-items:center;padding-bottom:15px;margin-bottom:15px;border-bottom:1px solid #e1e1e1;font-size:16px;color:#666}
+#ReservationWrite .bottom .totalprice span{color:#111;font-size:24px;font-weight:600}
+#ReservationWrite .bottom ul li{font-size:14px;color:#666}
+#ReservationWrite .bottom ul li + li{margin-top:8px}
+#ReservationWrite .btn-wrap{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:60px}
+#ReservationWrite .btn-wrap button{width:160px;height:55px;border:none;font-size:15px;color:#fff;background-color:var(--primary)}
+#ReservationWrite .btn-wrap a{display:flex;justify-content:center;align-items:center;width:100px;height:55px;font-size:15px;color:#fff;background-color:#a2a2a2}
+
+#ReservationList{margin:80px auto;max-width:1200px}
+#ReservationList .pagination{display:flex;justify-content:center;gap:8px;margin:30px 0}
+#ReservationList .pagination button{width:28px;height:28px;border:1px solid #e1e1e1;border-radius:3px;background-color:#f5f5f5}
+#ReservationList .pagination button.active {font-weight:bold;background:#000;color:#fff}
+
+/* 반응형 [s] */
+@media (max-width:1300px){
+#Reservation, #ReservationWrite{max-width:95%}
+}
+@media (max-width:1024px){
+#ReservationWrite .top{gap:20px}
+#ReservationWrite .top .right{padding:40px 20px 0}
+#ReservationWrite .top .right .tit{font-size:20px}
+#ReservationWrite .top .right ul{margin:40px 2.5% 0}
+#ReservationWrite .top .right ul li{font-size:14px}
+#ReservationWrite .top .right ul li span{margin-right:10px}
+#ReservationWrite .info-wrap{padding:20px;gap:20px}
+#ReservationWrite .info-wrap .tit{padding-bottom:25px;margin-bottom:25px;font-size:18px}
+#ReservationWrite .info-wrap span{font-size:15px}
+#ReservationWrite .info-wrap .select-wrap label{font-size:15px}
+#ReservationWrite .info-wrap .select-wrap select{font-size:15px}
+#ReservationWrite .info-wrap .price div{font-size:15px}
+#ReservationWrite .info-wrap .price{font-size:23px}
+#ReservationWrite .info-wrap .left img{height:280px}
+#ReservationWrite .info-wrap .right{padding:20px}
+#ReservationWrite .bottom{gap:20px}
+#ReservationWrite .bottom .container{padding:25px 15px;height:230px}
+#ReservationWrite .bottom .input-wrap > div input{height:44px}
+#ReservationWrite .bottom .totalprice{font-size:15px}
+#ReservationWrite .bottom .totalprice span{font-size:22px}
+#ReservationList{max-width:95%}
+.search-wrap input{width:220px;font-size:14px}
+}
+@media (max-width:768px){
+#ReservationWrite .top{flex-direction:column}
+#ReservationWrite .top .left, #ReservationWrite .top .right{width:100%}
+#ReservationWrite .top .right{padding:40px 2.5%}
+#ReservationWrite .middle{margin-top:60px}
+#ReservationWrite .info-wrap{flex-direction:column;gap:40px}
+#ReservationWrite .info-wrap .left, #ReservationWrite .info-wrap .right{width:100%}
+#ReservationWrite .info-wrap .right{padding:0px}
+#ReservationWrite .info-wrap .price{margin-top:60px}
+#ReservationWrite .bottom{flex-direction:column;margin-top:60px}
+#ReservationWrite .bottom .left, #ReservationWrite .bottom .right{width:100%}
+#Reservation, #ReservationList, #ReservationWrite{margin:70px auto}
+.search-wrap input{width:200px;height:40px;font-size:13px}
+.search-wrap button svg{width:16px}
+.refresh-btn{width:40px;height:40px}
+.refresh-btn svg{width:16px}
+}
+@media (max-width:480px){
+#ReservationWrite .top .right .tit{margin-bottom:20px;padding-bottom:20px;font-size:18px}
+#ReservationWrite .top .right ul{margin:0 2.5%}
+#ReservationWrite .top .right ul li{font-size:13px}
+#ReservationWrite .top .right ul li span{margin-right:8px}
+#ReservationWrite .middle{margin-top:50px}
+#ReservationWrite .middle p{padding:0 15px}
+#ReservationWrite .info-wrap{gap:30px;padding:15px}
+#ReservationWrite .info-wrap .left img{height:230px}
+#ReservationWrite .info-wrap .tit{padding-bottom:20px;margin-bottom:20px;font-size:16px}
+#ReservationWrite .info-wrap span{font-size:14px}
+#ReservationWrite .info-wrap .select-wrap{gap:20px}
+#ReservationWrite .info-wrap .select-wrap > div{gap:10px}
+#ReservationWrite .info-wrap .select-wrap label{font-size:14px}
+#ReservationWrite .info-wrap .select-wrap select{font-size:14px}
+#ReservationWrite .info-wrap .price div{font-size:14px}
+#ReservationWrite .info-wrap .price{margin-top:45px;font-size:21px}
+#ReservationWrite .bottom{margin-top:50px}
+#ReservationWrite .bottom p{padding:0 15px}
+#ReservationWrite .bottom .container{padding:20px 2.5%;height:220px}
+#ReservationWrite .bottom .totalprice{font-size:14px}
+#ReservationWrite .bottom .totalprice span{font-size:20px}
+#ReservationWrite .bottom ul li{font-size:13px}
+#ReservationWrite .bottom .input-wrap > div input{font-size:13px}
+#ReservationWrite .bottom textarea{font-size:13px}
+#ReservationWrite .btn-wrap button{width:150px;height:52px;font-size:14px}
+#ReservationWrite .btn-wrap a{width:90px;height:52px;font-size:14px}
+#Reservation, #ReservationList, #ReservationWrite{margin:50px auto}
+.admin-btn li a{height:45px}
+}
+/* 반응형 [e] */

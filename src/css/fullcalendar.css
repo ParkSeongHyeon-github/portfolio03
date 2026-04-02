@@ -1,0 +1,58 @@
+.fc .fc-toolbar{flex-direction:column}
+.fc-toolbar-chunk:first-child{justify-content:center;margin-bottom:20px}
+.fc .fc-toolbar-title{font-size:28px;font-weight:700}
+.fc-theme-standard th{height:40px;line-height:40px;font-size:16px}
+.fc-toolbar-chunk{display:flex;width:100%;justify-content:space-between}
+.fc .fc-button-primary:disabled{opacity:1;border-color:var(--primary);background-color:var(--primary)}
+.fc .fc-button-primary{border-color:var(--primary);background-color:var(--primary)}
+.fc .fc-button-group{gap:8px}
+.fc-theme-standard th{border-bottom:2px solid #111}
+.fc-theme-standard th.fc-day-sun{border-bottom:2px solid #e60000}
+.fc-theme-standard th.fc-day-sat{border-bottom:2px solid #007bda}
+.fc-theme-standard th.fc-day-sun a{color:#e60000}
+.fc-theme-standard th.fc-day-sat a{color:#007bda}
+.fc-theme-standard td{height:100px}
+.fc-day-sun .date{color:#e60000 !important}
+.fc-day-sat .date{color:#007bda}
+.fc .fc-daygrid-day-top{justify-content:start}
+.fc .fc-daygrid-day-number{padding:5px 8px;font-size:15px;font-weight:500}
+.room-list{display:flex;flex-direction:column;gap:5px;margin-top:20px}
+.room-list li .room { display:block;max-width:100%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.room-list li div{display:flex;align-items:center;gap:10px}
+.room-list li div span{display:flex;justify-content:center;align-items:center;width:20px;height:20px;border-radius:10px;font-size:12px}
+.room-list li div span.pos{color:#fff;background-color:#41bbaf}
+.room-list li div span.pos.end{background-color:#e60000}
+.room-list li div span.pos.wait{background-color:#1f77b3}
+
+/* 반응형 [s] */
+@media (max-width:1300px){
+.room-list li{font-size:14px}
+}
+@media (max-width:1024px){
+.fc-theme-standard td{height:80px}
+.room-list{gap:3px;margin-top:10px}
+.room-list li{font-size:12px}
+.room-list li div{gap:4px}
+.room-list li div span{width:16px;height:16px;font-size:10px}
+.fc-day .date{font-size:13px}
+.end-type{font-size:13px}
+}
+@media (max-width:768px){
+.fc-theme-standard td{height:60px}
+.room-list{flex-direction:row;flex-wrap:wrap;gap:3px;margin-top:8px}
+.room-list li .room{display:none}
+.room-list li div{gap:0}
+.room-list li div span{width:10px;height:10px;font-size:0;border-radius:50%}
+.fc .fc-toolbar-title{font-size:20px}
+.fc-theme-standard th{font-size:13px}
+.fc-day .date{font-size:12px}
+.end-type{font-size:12px}
+}
+@media (max-width:480px){
+.fc-theme-standard td{height:50px}
+.room-list{gap:2px}
+.room-list li div span{width:8px;height:8px}
+.fc-day .date{font-size:11px}
+.end-type{font-size:11px}
+}
+/* 반응형 [e] */

@@ -1,0 +1,80 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');/* regular - 400, medium - 500, semibold - 600, bold - 700 */ 
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+/* 기본 설정 */
+:root{--main-size:1460px;--k-font:'Pretendard';--e-font:"Marcellus", serif;--primary:#816c5b}
+body{overflow:hidden;font-size:0.81em;font-weight:400;font-family:var(--k-font);word-break:keep-all}
+h1, h2, h3, h4, h5, h6, input, button, textarea, select{font-weight:400;font-family:var(--k-font)}
+a{cursor:pointer}
+.pl{white-space:pre-line;word-break:keep-all}
+
+/* Header [s] */
+#header-wrap{position:absolute;left:50%;z-index:9;display:flex;justify-content:space-between;align-items:center;gap:60px;max-width:1600px;width:100%;height:90px;transform:translateX(-50%);font-family:var(--e-font)}
+#header-wrap .logo{font-size:32px;font-weight:500;color:#fff}
+#header-wrap .logo a{color:#fff}
+#header-wrap nav{margin-left:auto}
+#header-wrap ul{display:flex;align-items:center}
+#header-wrap nav ul{gap:30px;font-size:16px;font-weight:500}
+#header-wrap nav ul a{color:#fff}
+/* Header [e] */
+
+/* SubBanner [s] */
+#SubBanner{position:relative}
+#SubBanner .bg{position:relative;width:100%;height:600px;background:url("/img/main/main_banner_02.jpg") no-repeat center bottom}
+#SubBanner .bg:after{content:"";position:absolute;z-index:1;top:0px;left:0px;width:100%;height:100%;background-color:rgb(0, 0, 0, 0.5)}
+#SubBanner .tit{position:absolute;z-index:1;bottom:100px;left:50%;transform:translateX(-50%);width:1200px;color:#fff}
+#SubBanner .tit h1{margin-bottom:35px;font-size:42px;font-weight:500;font-family:var(--e-font)}
+#SubBanner .tit p{font-size:18px}
+
+/* SubBanner [e] */
+
+/* Footer [s] */
+footer{padding:80px 0;color:#fff;background-color:#222}
+#footer-wrap{position:relative;margin:auto;max-width:1600px}
+#footer-wrap .logo{margin-bottom:30px;padding-bottom:30px;border-bottom:1px solid #e1e1e1;font-size:30px;font-weight:700}
+#footer-wrap .address{font-size:16px}
+#footer-wrap .member{position:absolute;bottom:0px;right:0px;display:flex;gap:10px}
+#footer-wrap .member li a{font-size:16px;color:#fff}
+#footer-wrap .member li button{border:none;font-size:16px;color:#fff;background-color:transparent}
+/* Footer [e] */
+
+/* 반응형 [s] */
+@media (max-width:1600px){
+#header-wrap, #footer-wrap, #SubBanner .tit{width:95%}
+}
+@media (max-width:1024px){
+#header-wrap{gap:30px;height:70px}
+#header-wrap .logo{font-size:26px}
+#header-wrap nav ul{gap:20px;font-size:16px}
+#SubBanner .bg{height:400px}
+#SubBanner .tit h1{margin-bottom:20px;font-size:28px}
+#SubBanner .tit p{font-size:16px}
+}
+@media (max-width:768px){
+#header-wrap{gap:20px}
+#header-wrap .logo{font-size:22px}
+#header-wrap nav ul{gap:15px;font-size:15px}
+#SubBanner .bg{height:350px}
+#SubBanner .tit{bottom:60px}
+#SubBanner .tit h1{margin-bottom:15px;font-size:24px}
+#SubBanner .tit p{font-size:15px}
+footer{padding:70px 0}
+#footer-wrap{text-align:center}
+#footer-wrap .logo{margin-bottom:25px;padding-bottom:25px;font-size:25px}
+#footer-wrap .address{font-size:15px}
+#footer-wrap .member{position:static;justify-content:center;margin-top:50px}
+#footer-wrap .member li a{font-size:14px}
+}
+@media (max-width:480px){
+#header-wrap.Sub{position:static;gap:10px;transform:none;padding:0 2.5%;width:100%;height:65px;border-bottom:1px solid #e1e1e1}
+#header-wrap .logo{font-size:18px}
+#header-wrap.Sub .logo a{color:#000}
+#header-wrap nav ul{gap:10px;font-size:13px}
+#header-wrap.Sub nav ul a{color:#000}
+#SubBanner .bg{display:none}
+#SubBanner .tit{position:static;transform:none;padding:15px 0;width:100%;border-bottom:1px solid #e1e1e1;}
+#SubBanner .tit h1{margin-bottom:0px;font-size:16px;font-weight:500;text-align:center;color:#000;}
+#SubBanner .tit p{display:none;}
+#footer-wrap .logo{margin-bottom:20px;padding-bottom:20px;font-size:22px}
+#footer-wrap .address{font-size:14px}
+}
+/* 반응형 [e] */

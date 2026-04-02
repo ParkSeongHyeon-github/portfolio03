@@ -1,0 +1,171 @@
+#Mainbanner{position:relative;height:100vh}
+#Mainbanner .tit-container{position:absolute;top:250px;left:50%;transform:translateX(-50%);z-index:3;width:1400px}
+#Mainbanner .tit-container:after{content:"";position:absolute;top:50%;left:56%;transform:translate(-50%, -50%);width:400px;height:0.1px;background-color:#fff}
+#Mainbanner .tit-container h1{display:flex;justify-content:space-between;width:100%;font-size:70px;font-weight:500;font-family:var(--e-font);color:#fff}
+#Mainbanner .swiper{height:100%}
+#Mainbanner .swiper-slide{position:relative}
+#Mainbanner .swiper-slide:after{content:"";position:absolute;z-index:1;top:0px;left:0px;width:100%;height:100%;background-color:rgb(0, 0, 0, 0.5)}
+#Mainbanner .swiper-slide img{width:100%;height:100%;object-fit:cover}
+#Mainbanner .swiper-slide .content{position:absolute;z-index:2;bottom:150px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff}
+#Mainbanner .swiper-slide .content h2{font-size:30px;font-family:var(--e-font)}
+#Mainbanner .swiper-slide .content p{margin:20px 0;font-size:18px;line-height:1.5}
+#Mainbanner .swiper-slide .content a{display:flex;align-items:center;gap:20px;font-size:16px;font-weight:600;color:#fff}
+#Mainbanner .swiper-slide .content a div{display:flex;justify-content:center;align-items:center;width:50px;height:50px;border:1px solid #fff;border-radius:25px;transition:all .3s}
+#Mainbanner .swiper-slide .content a:hover div{color:var(--primary);background-color:#fff}
+
+#Section01{position:relative;margin-top:120px}
+#Section01 .tit{margin:0 auto 80px;max-width:1400px}
+#Section01 .tit h2{font-size:50px;color:#222;font-family:var(--e-font)}
+#Section01 .tit p{margin-top:20px;font-size:20px;color:#666}
+#Section01 .bg{width:100%;height:1000px;background:url("/img/main/section01_bg.jpg") no-repeat center}
+#Section01 .swiper{position:absolute;top:60%;left:50%;transform:translate(-50%, -50%);width:1400px}
+#Section01 .swiper-slide{display:flex;flex-direction:column;padding:40px 30px;height:700px;background-color:#fff}
+#Section01 .swiper-slide a{display:flex;flex-direction:column;height:100%}
+#Section01 .swiper-slide h3{margin-bottom:15px;padding-bottom:15px;border-bottom:1px solid #e1e1e1;font-size:20px;font-weight:700}
+#Section01 .swiper-slide p{margin-bottom:30px;padding-bottom:30px;height:245px;border-bottom:1px solid #111;font-size:13px;color:#000;line-height:1.5}
+#Section01 .swiper-slide img{margin-top:auto;width:100%;height:300px;object-fit:cover}
+
+#Section02{margin:120px auto;max-width:1400px}
+#Section02 .tit{margin:0 auto 80px;max-width:1400px}
+#Section02 .tit h2{font-size:50px;color:#222;font-family:var(--e-font)}
+#Section02 .tit p{margin-top:20px;font-size:20px;color:#666}
+#Section02 .wrap{display:flex;gap:50px}
+#Section02 .wrap .left, #Section02 .wrap .right{width:50%}
+#Section02 .wrap .left img{width:100%}
+#Section02 .wrap .right{display:flex;flex-direction:column;padding:100px 0 80px 100px}
+#Section02 .wrap .right .sub-tit{font-size:15px;font-weight:600;color:var(--primary)}
+#Section02 .wrap .right .title{margin:20px 0;font-size:35px;color:#222;font-family:var(--e-font)}
+#Section02 .wrap .right .des{width:80%;word-break:keep-all;font-size:15px;font-weight:400;line-height:1.5;color:#777}
+#Section02 .wrap .right ul{margin-top:auto}
+#Section02 .wrap .right ul li{padding:15px 20px;border-top:1px solid #111;font-size:16px;font-weight:500;color:#222;cursor:pointer;transition:all .3s}
+#Section02 .wrap .right ul li span{margin-right:30px}
+
+#Section03{display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;width:100%;color:#fff}
+#Section03::before{content:"";display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:178px;height:217px;z-index:1;border-radius:90px 90px 0 0;background:rgba(63, 48, 37, 0.8)}
+#Section03 .bg{overflow:hidden;width:100%;height:793px;filter:brightness(0.8)}
+#Section03 .bg video{width:100%;height:100%;object-fit:cover}
+#Section03 .txt{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2}
+#Section03 .txt p{z-index:1;padding-top:117px;font-size:40px;font-weight:300;text-transform:uppercase;font-family:var(--e-font)}
+#Section03 .txt > span{display:block;z-index:1;padding:15px 0 70px;font-size:16px;line-height:2.0;text-align:center;white-space:pre-line}
+#Section03 .txt a{font-size:17px;color:#fff;font-family:var(--e-font)}
+#Section03 .txt a span{padding:0 15px;transition:0.2s}
+#Section03 .txt a:hover span{padding:0 25px}
+
+#Section04{display:grid;grid-template-columns:repeat(2,1fr);align-items:center;height:980px;text-align:center;background:url('/img/main/section04_bg.jpg')}
+#Section04 .l_cont{font-size:45px;color:#fff;text-transform:uppercase;white-space:pre-line;font-family:var(--e-font)}
+#Section04 .r_cont{color:#fff}
+#Section04 .r_cont .logo{font-size:30px;font-weight:500;font-family:var(--e-font)}
+#Section04 .r_cont p{margin-top:15px;font-size:16px;font-weight:500}
+#Section04 .r_cont .info{display:flex;justify-content:center;gap:50px;margin-top:70px}
+#Section04 .r_cont dt{margin-bottom:5px;font-size:17px;text-transform:uppercase;font-weight:700}
+#Section04 .r_cont dd{opacity:.5;margin-bottom:5px}
+
+/* 반응형 [s] */
+@media (max-width:1400px){
+#Mainbanner .tit-container, #Section01 .tit,#Section02, #Section02 .tit{max-width:95%}
+#Mainbanner .tit-container:after{left:56%;width:23%}
+#Section01 .swiper{width:90%}
+#Section02 .wrap .left img{height:680px;object-fit:cover}
+#Section02 .wrap .right{padding:70px 0 50px 70px}
+#Section02 .wrap .right .des{width:95%}
+}
+@media (max-width:1280px){
+#Mainbanner .tit-container h1{justify-content:center;gap:50px;font-size:60px}
+#Mainbanner .tit-container:after{display:none}
+}
+@media (max-width:1024px){
+#Mainbanner .tit-container h1{gap:40px;font-size:50px}
+#Mainbanner .swiper-slide .content h2{font-size:25px}
+#Mainbanner .swiper-slide .content p{font-size:16px}
+#Mainbanner .swiper-slide .content a{font-size:15px}
+#Mainbanner .swiper-slide .content a div{width:45px;height:45px}
+#Section01{margin-top:100px}
+#Section01 .tit, #Section02 .tit{margin-bottom:60px}
+#Section01 .tit h2, #Section02 .tit h2{font-size:40px}
+#Section01 .tit p, #Section02 .tit p{font-size:17px}
+#Section01 .swiper-slide h3{font-size:18px}
+#Section01 .swiper-slide img{height:250px}
+#Section02{margin:100px auto}
+#Section02 .wrap{gap:20px}
+#Section02 .wrap .right{padding:50px 0 50px 30px}
+#Section02 .wrap .right .title{font-size:28px}
+#Section02 .wrap .right .des{font-size:14px}
+#Section02 .wrap .right ul li{font-size:15px}
+#Section03 .bg{height:690px}
+#Section03 .txt{width:90%}
+#Section03 .txt p{padding-top:107px;font-size:32px}
+#Section03 .txt > span{font-size:15px}
+#Section04{height:780px}
+#Section04 .l_cont{font-size:32px}
+#Section04 .r_cont .logo{font-size:25px}
+#Section04 .r_cont p{font-size:15px}
+#Section04 .r_cont dt{font-size:16px}
+}
+@media (max-width:768px){
+#Mainbanner .tit-container h1{gap:30px;font-size:40px}
+#Mainbanner .swiper-slide .content h2{font-size:22px}
+#Mainbanner .swiper-slide .content p{font-size:15px}
+#Mainbanner .swiper-slide .content a{font-size:14px}
+#Mainbanner .swiper-slide .content a div{width:42px;height:42px}
+#Section01{margin-top:80px}
+#Section01 .tit, #Section02 .tit{margin-bottom:50px;text-align:center}
+#Section01 .tit h2, #Section02 .tit h2{font-size:32px}
+#Section01 .tit p, #Section02 .tit p{font-size:15px}
+#Section01 .bg{height:800px}
+#Section01 .swiper{top:59%}
+#Section01 .swiper-slide{height:600px}
+#Section02 .wrap{position:relative;flex-direction:column-reverse}
+#Section02 .wrap .left{width:100%}
+#Section02 .wrap .right{position:absolute;z-index:3;top:50%;left:50%;transform:translate(-50%, -50%);padding:0px;width:70%;text-align:center}
+#Section02 .wrap .right .sub-tit, #Section02 .wrap .right .des{color:#fff;opacity:0.7}
+#Section02 .wrap .right .title{color:#fff}
+#Section02 .wrap .right ul{margin-top:50px}
+#Section02 .wrap .right ul li{color:#fff;border-top:1px solid #e1e1e1}
+#Section02 .wrap .right ul li span{margin-right:20px}
+#Section02 .wrap .left img{height:780px;filter:brightness(0.5)}
+#Section03 .bg{height:600px}
+#Section03 .txt p{padding-top:95px;font-size:26px}
+#Section03 .txt > span{font-size:15px}
+#Section04{grid-template-columns:repeat(1, 1fr);padding:100px 0;height:auto}
+#Section04 .l_cont{font-size:24px}
+#Section04 .r_cont .logo{margin-top:30px;font-size:21px}
+#Section04 .r_cont p{margin-top:30px;font-size:14px}
+#Section04 .r_cont dt{font-size:15px}
+}
+@media (max-width:580px){
+#Mainbanner .tit-container h1{gap:25px;font-size:32px}
+}
+@media (max-width:480px){
+#Mainbanner .tit-container{top:280px}
+#Mainbanner .tit-container h1{gap:20px;font-size:26px}
+#Mainbanner .swiper-slide .content{bottom:130px}
+#Mainbanner .swiper-slide .content h2{font-size:20px}
+#Mainbanner .swiper-slide .content p{font-size:14px}
+#Mainbanner .swiper-slide .content a{font-size:13px}
+#Mainbanner .swiper-slide .content a div{width:38px;height:38px}
+#Mainbanner .swiper-slide .content a div svg{width:20px}
+#Section01 .tit h2, #Section02 .tit h2{font-size:28px}
+#Section01 .tit p, #Section02 .tit p{margin-top:15px;font-size:14px}
+#Section01 .bg{height:700px}
+#Section01 .swiper{top:59%}
+#Section01 .swiper-slide{height:600px}
+#Section02{margin:90px auto}
+#Section02 .wrap .right{width:85%}
+#Section02 .wrap .right .sub-tit{font-size:14px}
+#Section02 .wrap .right .title{margin:15px 0;font-size:23px}
+#Section02 .wrap .right .des{font-size:13px}
+#Section02 .wrap .right ul li{font-size:14px}
+#Section02 .wrap .right ul li span{margin-right:15px}
+#Section02 .wrap .left img{height:650px}
+#Section03 .bg{height:530px}
+#Section03::before{width:165px;height:205px}
+#Section03 .txt p{padding-top:95px;font-size:22px}
+#Section03 .txt > span{font-size:14px}
+#Section03 .txt a{font-size:15px}
+#Section04 .l_cont{font-size:21px}
+#Section04 .r_cont .logo{margin-top:20px;font-size:18px}
+#Section04 .r_cont p{margin-top:20px;font-size:13px}
+#Section04 .r_cont dt{font-size:14px}
+#Section04 .r_cont .info{margin-top:50px}
+}
+/* 반응형 [e] */
