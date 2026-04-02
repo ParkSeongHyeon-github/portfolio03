@@ -160,7 +160,7 @@ const RoomWrite = ({user} : {user : string | null}) => {
                         <input type="file" {...register("room_img")} id="room_img"  className="input file" multiple/>
                     </div>
                     <ul className="btn-wrap">
-                        <li><button type="submit">매물 등록</button></li>
+                        <li><button type="submit">객실 등록</button></li>
                         <li><Link to='/room/list'>취소</Link></li>
                     </ul>
                 </form>
