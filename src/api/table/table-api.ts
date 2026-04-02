@@ -6,7 +6,7 @@ import type { CommunityWriteProps } from "../../type/community/community-type";
 type ApiData = RoomWriteProps | ReservationWriteProps | CommunityWriteProps
 
 export const Insert = async<T extends ApiData>(data : T, table_name : string) => {
-    const res = await fetch(baseUrl + `${table_name}`, {
+    const res = await fetch(baseUrl + `/${table_name}`, {
         method : "post",
         headers : {"content-type" : "application/json"},
         body : JSON.stringify(data)
@@ -20,7 +20,7 @@ export const Insert = async<T extends ApiData>(data : T, table_name : string) =>
 }
 
 export const Update = async<T extends ApiData>(data : T, table_name : string, id : string) => {
-    const res = await fetch(baseUrl + `${table_name}/${id}`, {
+    const res = await fetch(baseUrl + `/${table_name}/${id}`, {
         method : "put",
         headers : {"content-type" : "application/json"},
         body : JSON.stringify(data)
@@ -32,7 +32,7 @@ export const Update = async<T extends ApiData>(data : T, table_name : string, id
 }
 
 export const Select = async(params : {page?:number; subject?:string; name?:string} = {}, table_name : string) => {
-    let url = `${baseUrl}${table_name}`;
+    let url = `${baseUrl}/${table_name}`;
     if(params.page){
         url += `?_page=${params.page}&_limit=15`
     }
@@ -52,7 +52,7 @@ export const Select = async(params : {page?:number; subject?:string; name?:strin
 }
 
 export const SelectOne = async(table_name : string, id : string) => {
-   const res = await fetch(baseUrl + `${table_name}/${id}`);
+   const res = await fetch(baseUrl + `/${table_name}/${id}`);
     if(!res.ok){
         throw new Error("서버 접속 실패");
     }
@@ -60,7 +60,7 @@ export const SelectOne = async(table_name : string, id : string) => {
 }
 
 export const Delete = async(table_name : string, id : string) => {
-    const res = await fetch(baseUrl + `${table_name}/${id}`, {
+    const res = await fetch(baseUrl + `/${table_name}/${id}`, {
         method: "delete"
     })
     if(!res.ok){

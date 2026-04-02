@@ -172,7 +172,7 @@ const ReservationWrite = () => {
         if(selectDay && roomData){
             const load = async() => {
                 try{
-                    const res = await fetch(baseUrl + `reservation?roomSubject=${roomData.room_subject}`);
+                    const res = await fetch(baseUrl + `/reservation?roomSubject=${roomData.room_subject}`);
                     const result = await res.json();
                     if (!result || result.length === 0) return;
 

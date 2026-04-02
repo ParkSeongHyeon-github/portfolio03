@@ -24,7 +24,7 @@ const Register = () => {
             return;
         }
         try{
-            const res = await fetch(baseUrl + `member?mb_id=${id}`);
+            const res = await fetch(baseUrl + `/member?mb_id=${id}`);
             const memberId = await res.json();
             if(memberId.length > 0){
                 alert("이미 존재하는 아이디입니다");
