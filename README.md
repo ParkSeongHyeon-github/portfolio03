@@ -1,73 +1,82 @@
-# React + TypeScript + Vite
+# 펜션 예약 및 결제 서비스
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-----------------------------
 
-Currently, two official plugins are available:
+### 배포 URL
+https://portfolio03-lj0x.onrender.com/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+-----------------------------
 
-## React Compiler
+### 프로젝트 소개
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React(TypeScript) 기반으로 제작한 펜션 예약 서비스입니다.
 
-## Expanding the ESLint configuration
+사용자는 객실과 날짜를 선택하여 예약을 진행할 수 있으며,  
+토스 결제 API를 연동하여 실제 서비스와 유사한 결제 흐름을 구현했습니다.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+예약 과정에서 중복 예약 방지 로직과 상태 관리(대기 / 완료)를 적용하여  
+데이터의 안정성을 고려했습니다.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+-----------------------------
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 주요 기능
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  ### 사용자 기능
+  - 날짜 및 객실 선택 기반 예약
+  - 숙박 일수에 따른 가격 자동 계산
+  - 인원 수에 따른 추가 요금 반영
+  - 토스 결제 연동을 통한 결제 진행
+  - 예약 상태 확인 (대기 / 완료)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+  ### 관리자 기능
+  - 객실(Room) 정보를 등록, 수정, 삭제
+  - 가격, 기준 인원, 최대 인원 등의 데이터를 관리
+  - 예약 목록 조회 및 예약 상태(대기 / 완료) 확인
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+-----------------------------
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 기술 스택
+
+- **React (TypeScript)**  
+  → 상태 관리 및 동적 UI 구성
+
+- **React Hook Form**  
+  → 객실 등록 폼 상태 관리 
+  → 입력값 검증 및 성능 최적화
+
+- **React Router**  
+  → 예약 흐름 페이지 이동 처리
+
+- **JSON Server**  
+  → 예약 및 객실 데이터 관리
+
+- **토스 결제 API**  
+  → 실제 결제 흐름 구현
+
+-----------------------------
+
+### 주의사항
+
+- 차량 이미지 업로드 시 `public/img/land` 폴더에 직접 추가해야 합니다.
+- 이미지 파일명은 반드시 `객실명01, 02, 03...` 형식으로 작성해야 정상 출력됩니다
+
+----------------------
+
+### 관리자 계정
+
+- ID: admin  
+- PW: a1234
+
+----------------------
+
+### 프로젝트를 통해 성장한 점
+
+- 반복적으로 사용되는 UI(서브배너, 목록, 상세 페이지 등)를 컴포넌트화하여 재사용성과 유지보수성을 고려한 구조로 개선했습니다.
+- 결제 로직은 백엔드에서만 처리된다고 생각했으나, 외부 결제 API를 직접 연동하면서 프론트엔드에서도 결제 흐름을 제어할 수 있다는 점을 경험했습니다.
+- FullCalendar 등 다양한 React 라이브러리를 적용하면서 외부 라이브러리를 프로젝트에 맞게 활용하는 경험을 쌓았습니다.
+
+----------------------
+
+### 개선사항
+
+- 현재 데이터 요청 로직이 여러 컴포넌트에서 반복되고 있어 커스텀 훅으로 분리하여 데이터 로직을 공통화할 필요가 있습니다.
